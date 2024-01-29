@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Searcher</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- daisyUI for inline styling-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- "Theme Change" for daisyUI by github user saadeghi: https://github.com/saadeghi/theme-change -->
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+</head>
+<!-- Navbar | Edit Desktop appearance -->
+<div class="navbar bg-neutral text-neutral-content">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="#hero">Homepage</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-center">
+        <!-- Update Navbar text -->
+      <a class="btn btn-ghost text-xl">Social Searcher</a>
+    </div>
+    <div class="navbar-end"><!-- 
+        <a class="p-1">Light</a>
+        <div class="inline-block w-10">
+            <span data-toggle-theme="light" data-act-class="pl-4" class="border rounded-full border-green-700 flex items-center cursor-pointer w-10 transition-all duration-300 ease-in-out pl-0">
+                <span class="rounded-full w-3 h-3 m-1 bg-green-700">
+                </span>
+            </span>
+        </div>
+        <a class="p-1">Dark</a> -->
+
+        <!-- Set "on click" to display search bar -->
+        <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+        </button>
+<!--  <button class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+          <span class="badge badge-xs badge-primary indicator-item"></span>
+        </div>
+      </button> -->
+    </div>
+  </div>
+<body>
+    <!-- Hero section -->
+    <div id="hero" class="hero min-h-screen" style="background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+        <!-- Replace Background Image -->
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Social Searcher</h1>
+            <!-- Update Header Language -->
+            <p class="mb-5">A simple web app for all of your social media needs.</p>
+            <!-- Update Hero Text -->
+            <!-- <button class="btn btn-primary">Get Started</button> -->
+            </div>
+         </div>
+    </div>
+    <!-- Divider -->
+    <div class="divider divider-secondary divider-start m-0 pr-2 pl-2"></div>
+
+    <!-- Section Container -->
+    <div section="content" id="content" class="flex h-96 mb-2 items-center justify-around">
+        <div class="h-96 bg-neutral card flex-col bg-base-100 w-1/2 shadow-xl ml-4">
+            <div class="h-full card-body items-center">
+                <h2 class="card-title ">Most Recent Upload</h2>
+                <iframe height="100%" width="100%" src="https://www.youtube.com/embed/uxs_HYw_mLk?si=wezg-QmIWQPhWlNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+
+        <!-- Email Sign-Up -->
+        <div class="h-1/2 w-1/2 flex-col card bg-base-100 shadow-xl m-2">
+            <div class="card-body items-center justify-around">
+                <h2 class="card-title">Sign Up for Email Updates</h2>
+                <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+        <!-- Tweet Card -->
+        <div class="card h-1/2 w-full shadow-xl m-4">
+            <div class="card-body items-center">
+                <h2 class="card-title">Recent Tweets</h2>
+                <a>
+                    <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark" data-cards="hidden"><p lang="en" dir="ltr">We are humbled by the incredible reception and heartfelt reviews for Alan Wake 2. Thank you everyone who has played, shared and embraced Alan&#39;s and Saga&#39;s journey. Your support means the world to us! 🙌 🎮 🔦<a href="https://twitter.com/hashtag/alanwake?src=hash&amp;ref_src=twsrc%5Etfw">#alanwake</a> <a href="https://t.co/PkLsIVuelW">pic.twitter.com/PkLsIVuelW</a></p>&mdash; Remedy Entertainment (@remedygames) <a href="https://twitter.com/remedygames/status/1724094936453177515?ref_src=twsrc%5Etfw">November 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
