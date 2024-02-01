@@ -1,7 +1,6 @@
-// const frame = document.getElementById("ytEmbed");
-// const channelID = "UCS6s3OidfTU0fMRScTGE_jg";
-// var guid="";
-// var APIKey = "AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE"
+// 
+// var channelID = "UCS6s3OidfTU0fMRScTGE_jg";
+// var API_KEY = "AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE"
 
 
 // $(window).on("load", function() {   
