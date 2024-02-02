@@ -1,7 +1,7 @@
 //get results, send array back to html
-var API_KEY = "AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE"
+// var API_KEY = "AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE"
 
-function search() {
+// function search() {
 //   gapi.client.setApiKey('AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE');
 //   gapi.client.load('youtube', 'v3', function(){
 //           makeRequest();
@@ -25,8 +25,8 @@ function search() {
 //           $('#results').append('<pre>' + vidTitle + vidThumbimg +   '</pre>');                      
 //   })  
 // })  
- }
+//  }
 
 
-searchButton.addEventListener("click", search)
+// searchButton.addEventListener("click", search)
 
