@@ -1,6 +1,8 @@
 var API_KEY = "AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE";
 var CHANNEL_ID = "UCS6s3OidfTU0fMRScTGE_jg";
+localStorage.setItem("channelId", CHANNEL_ID)
 
+//This calls on the API key and channel ID to display the most recent YouTube upload in the card on the website on load
 fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=1`)
   .then((response) => response.json())
   .then((data) => {
@@ -9,6 +11,3 @@ fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${C
     document.getElementById('youtubeEmbed').innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
   })
   .catch((error) => console.error('Error:', error));
-
-  //FUNCTIONING- add API keys to increase quota?
-  //limit requests to API if possible?
