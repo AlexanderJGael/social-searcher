@@ -9,3 +9,6 @@ fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${C
     document.getElementById('youtubeEmbed').innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
   })
   .catch((error) => console.error('Error:', error));
+
+  //add API keys to increase quota
+  //limit requests to API if possible?
