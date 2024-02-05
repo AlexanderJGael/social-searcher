@@ -32,11 +32,8 @@ function makeRequest(){
 
  //JSON.stringify/parse?
 //add if statement for displaying search results on page
-//serachbutton ONCLICK, redirect to results page
+//searchbutton ONCLICK, redirect to results page
 //jquery .onClick, function()
-
-
-//NEW TRY
 
 
 searchBtn.addEventListener("click", search)

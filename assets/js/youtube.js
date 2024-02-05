@@ -10,5 +10,5 @@ fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${C
   })
   .catch((error) => console.error('Error:', error));
 
-  //add API keys to increase quota
+  //FUNCTIONING- add API keys to increase quota?
   //limit requests to API if possible?
