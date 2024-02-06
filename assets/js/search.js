@@ -3,6 +3,5 @@ document.getElementById('search-btn').addEventListener('click', function(event){
     event.preventDefault()
     var search = document.getElementById("search").value
     localStorage.setItem("search", search)
-    window.location.href = "../html/results.html";
-})
-
+    window.location.assign("results.html")
+});
