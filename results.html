@@ -12,9 +12,21 @@
 
 <body>
     <!--This creates a space to display the YouTube search results on a separate page-->
-    <div id="container" class="hero-content text-center">
-        <h1 class="mb-5 text-5xl font-bold">Search Results</h1>
-            <ul id="results"></ul>
+    <div id="container" class="hero items-center text-center">
+      <div class="remedy-logo w-embed h-20 mt-10">
+        <a href="./index.html" aria-current="page" class="nav_logo-link w-inline-block w--current">
+        <svg width="100%" height="100%" viewBox="0 0 567 567" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M324 123.9V280.1C367.1 280.1 402.1 245.1 402.1 202C402 158.9 367.1 123.9 324 123.9ZM215.5 123.9H134V280.1H215.6C258.7 280.1 293.7 245.1 293.7 202C293.6 158.9 258.7 123.9 215.5 123.9ZM485.9 358.1V322.5C468.8 345.5 447 364.7 421.8 378.7L485.9 491.9V423.9L566.9 566.9H388L324 453.8V566.9H284.9L192.6 404H134V566.9H0V0H215.5C255.4 0 292.6 11.6 323.9 31.6V0C390.2 0 449 32 485.9 81.3V45.8C531.1 82.8 559.9 139.1 559.9 202C559.9 265 531.1 321.1 485.9 358.1Z" fill="white"></path>
+        </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div id="list" class="flex flex-col items-center justify-center">
+      <ul id="results">
+      </ul>
     </div>
   <script src="./assets/js/results.js"></script>
 </body>
