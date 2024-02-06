@@ -1,6 +1,8 @@
 var API_KEY = "AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE";
 var CHANNEL_ID = "UCS6s3OidfTU0fMRScTGE_jg";
+localStorage.setItem("channelId", CHANNEL_ID)
 
+//This calls on the API key and channel ID to display the most recent YouTube upload in the card on the website on load
 fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=1`)
   .then((response) => response.json())
   .then((data) => {

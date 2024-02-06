@@ -1,17 +1,22 @@
 :root {
     --color-default: #fff;
   }
+
   @media (prefers-color-scheme: dark){
       :root{
           --color-default: #252b30;
       }
   }
+
   [data-theme='dark'] {
     --color-default: #252b30;
   }
+
   [data-theme='light'] {
     --color-default: #fff;
   }
+
   body {
     background-color: var(--my-color);
   }
+
