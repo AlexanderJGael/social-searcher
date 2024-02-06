@@ -6,7 +6,9 @@ AS a creator
 WHEN someone visits my website
 THEN they can see my most recent social media posts
 WHEN I use the search bar
-THEN the page displays YouTube channel content including the query
+THEN the page displays YouTube channel content relevant to my query
+WHEN I click on the Nav Bar
+THEN the buttons direct me to the specified place in the application
 
 
 ##Deployment
@@ -36,7 +38,7 @@ Collaborators: Alex Gael, Jennie Brockhoff, and Mark Tovar
 
 APIs used:
 - daisyUI (Built on Tailwind): https://daisyui.com
--YouTube API
+- YouTube API
 
 Tutoring assistance from Chris Baird
 
