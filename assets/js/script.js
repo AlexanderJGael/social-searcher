@@ -1,6 +1,6 @@
 //DOM Elements
-var emailInput = document.querySelector(".input");
-var submitButton = document.querySelector("#submit");
+var emailInput = document.querySelector("#email-input");
+var submitButton = document.querySelector("#submit-email");
 var formCardTitle = document.querySelector("card-title")
 
 
@@ -14,11 +14,11 @@ function badSubmit() {
     }, 1000);
 
     function switchRed() {
-        document.getElementById("submit").style.backgroundColor = "red"
+        document.getElementById("submit-email").style.backgroundColor = "red"
     };
 
     function switchGreen() {
-        document.getElementById("submit").style.backgroundColor = "green"
+        document.getElementById("submit-email").style.backgroundColor = "green"
 
     }
 }
