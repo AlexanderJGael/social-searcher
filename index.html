@@ -57,24 +57,27 @@
 
 <hero>
   <div id="hero" class="hero min-h-screen" >
-    <div hash_id="4f9c37afb9" video_id="894150110" app_id="58479" class="hero-background-video vimeo-wrapper-full w-embed w-iframe w-script"><script>
-      let container = document.currentScript.parentElement;
-      
-      let videoID = container.getAttribute('video_id');
-      
-      let appID = container.getAttribute('app_id');
-      if (appID) appID = '&app_id='+appID;
-      
-      let hashID = container.getAttribute('hash_id');
-      if (hashID) hashID = '&h='+hashID;
-      
-      if (videoID) {
-        document.write('<iframe src="https://player.vimeo.com/video/'+videoID+'?background=1&dnt=1'+appID+hashID+'" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>');
-      }
-      /*
-      <iframe src="https://player.vimeo.com/video/74918480?background=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      */
-      </script><iframe src="https://player.vimeo.com/video/894150110?background=1&amp;dnt=1&amp;app_id=58479&amp;h=4f9c37afb9" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+    <!-- Video background from Remedy Entertainment -->
+    <div hash_id="4f9c37afb9" video_id="894150110" app_id="58479" class="hero-background-video vimeo-wrapper-full w-embed w-iframe w-script">
+      <script>
+        let container = document.currentScript.parentElement;
+        
+        let videoID = container.getAttribute('video_id');
+        
+        let appID = container.getAttribute('app_id');
+        if (appID) appID = '&app_id='+appID;
+        
+        let hashID = container.getAttribute('hash_id');
+        if (hashID) hashID = '&h='+hashID;
+        
+        if (videoID) {
+          document.write('<iframe src="https://player.vimeo.com/video/'+videoID+'?background=1&dnt=1'+appID+hashID+'" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>');
+        }
+        /*
+        <iframe src="https://player.vimeo.com/video/74918480?background=1" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        */
+      </script>
+      <iframe src="https://player.vimeo.com/video/894150110?background=1&amp;dnt=1&amp;app_id=58479&amp;h=4f9c37afb9" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
       
       <style>
       .vimeo-wrapper-full {
@@ -125,7 +128,7 @@
         <div class="divider"></div>
 
         <!-- Email Sign-Up -->
-        <div class="flex-grow max-w-1/2 h-96 outline m-8 flex-col card bg-neutral">
+        <div class="flex-grow max-w-1/3 h-96 outline m-8 flex-col card bg-neutral">
             <div class="card-body items-center justify-around">
                 <h2 class="card-title mt-12">Sign Up for Email Updates</h2>
                 <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
@@ -134,10 +137,10 @@
           </div>
 
         <!-- Tweet Card -->
-        <div class="flex-grow max-w-1/2 h-96 card outline flex-col items-center bg-neutral m-8">
+        <div class="flex-grow max-w-2/3 h-96 card outline flex-col items-center bg-neutral m-8">
           <div class="card-body flex-col items-center justify-center">
               <h2 class="card-title">Recent Tweets</h2>
-              <a class="twitter-timeline" data-chrome="noscrollbar noheader noborders" data-width="100%" data-height="auto" data-theme="dark" data-tweet-limit="1" href="https://twitter.com/remedygames?ref_src=twsrc%5Etfw">Tweets by remedygames</a> 
+              <a class="twitter-timeline flex" data-chrome="noscrollbar noheader noborders" data-width="600" data-height="300" data-theme="dark" data-tweet-limit="1" href="https://twitter.com/remedygames?ref_src=twsrc%5Etfw">Tweets by remedygames</a> 
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
