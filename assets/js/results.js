@@ -11,5 +11,30 @@ fetch(
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
+    // Loop through the items in the data array and display each video with its thumbnail
+    data.items.forEach((item) => {
+      var videoId = item.id.videoId;
+      var videoTitle = item.snippet.title;
+      var videoThumbnail = item.snippet.thumbnails.default.url;
+
+      // Create a container div for each video
+      var videoContainer = document.createElement("div");
+
+      // Create an image element for the video thumbnail
+      var thumbnailImage = document.createElement("img");
+      thumbnailImage.src = videoThumbnail;
+
+      // Create a heading element for the video title
+      var titleHeading = document.createElement("h3");
+      titleHeading.textContent = videoTitle;
+
+      // Append the thumbnail and title elements to the video container
+      videoContainer.appendChild(thumbnailImage);
+      videoContainer.appendChild(titleHeading);
+
+      // Append the video container to the body or any other desired element in your HTML
+      document.body.appendChild(videoContainer);
+    });
   })
   .catch((error) => console.error("Error:", error));
+
