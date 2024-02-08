@@ -4,4 +4,7 @@ document.getElementById('search-btn').addEventListener('click', function(event){
     var search = document.getElementById("search").value
     localStorage.setItem("search", search)
     window.location.assign("results.html")
+
+    youtubeResults();
+    spotifyResults();
 });
