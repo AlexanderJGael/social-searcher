@@ -1,4 +1,6 @@
 /* var API_KEY = "AIzaSyCZmbOSPR6rIQ3IQDcQfzqGsPZLERTiL_c"; */
+//var API_KEY = "AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE";
+var API_KEY = "AIzaSyDc8pWz32IVDozNbfYqKd3bTcifbladBY4";
 var CHANNEL_ID = localStorage.getItem("channelId");
 var SEARCH = localStorage.getItem("search");
 console.log(CHANNEL_ID);
@@ -44,3 +46,4 @@ console.log(SEARCH);
       });
     })
   .catch((error) => console.error("Error:", error));
+
