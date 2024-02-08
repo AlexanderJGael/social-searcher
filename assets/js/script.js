@@ -12,7 +12,7 @@ function badSubmit() {
     }, 1000);
 
     function switchRed() {
-        document.getElementById("submit").style.backgroundColor = "red"
+        document.getElementById("#submit-email").style.backgroundColor = "red"
     };
 
     function switchGreen() {

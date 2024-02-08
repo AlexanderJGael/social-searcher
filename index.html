@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme=‘dark’>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -120,9 +120,30 @@
   <div section="content" id="content" class="box p-8 flex flex-wrap items-center bg-neutral h-screen w-screen">
       <!-- YouTube Uploads -->
         <div class="h-1/2  bg-neutral card flex-col bg-neutral w-full m-8 outline">
+<body>
+    <!-- Hero section -->
+    <div id="hero" class="hero min-h-screen" style="background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+        <!-- Replace Background Image -->
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Social Searcher</h1>
+            <!-- Update Header Language -->
+            <p class="mb-5">A simple web app for all of your social media needs.</p>
+            <!-- Update Hero Text -->
+            <!-- <button class="btn btn-primary">Get Started</button> -->
+            </div>
+         </div>
+    </div>
+    <!-- Divider -->
+    <div class="divider divider-secondary divider-start m-0 pr-2 pl-2"></div>
+
+    <!-- Section Container -->
+    <div section="content" id="content" class="flex h-96 mb-2 items-center justify-around">
+        <div class="h-96 bg-neutral card flex-col bg-base-100 w-1/2 shadow-xl ml-4">
             <div class="h-full card-body items-center">
                 <h2 class="card-title ">Most Recent Upload</h2>
-                <a id="youtubeEmbed"></a>
+                <iframe height="100%" width="100%" src="https://www.youtube.com/embed/uxs_HYw_mLk?si=wezg-QmIWQPhWlNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
             </div>
         </div>
 
@@ -143,6 +164,12 @@
               <h2 class="card-title">Recent Tweets</h2>
               <a class="twitter-timeline flex" data-chrome="noscrollbar noheader noborders" data-width="600" data-height="300" data-theme="dark" data-tweet-limit="1" href="https://twitter.com/remedygames?ref_src=twsrc%5Etfw">Tweets by remedygames</a> 
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="card h-1/2 w-full shadow-xl m-4">
+            <div class="card-body items-center">
+                <h2 class="card-title">Recent Tweets</h2>
+                <a>
+                    <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark" data-cards="hidden"><p lang="en" dir="ltr">We are humbled by the incredible reception and heartfelt reviews for Alan Wake 2. Thank you everyone who has played, shared and embraced Alan&#39;s and Saga&#39;s journey. Your support means the world to us! 🙌 🎮 🔦<a href="https://twitter.com/hashtag/alanwake?src=hash&amp;ref_src=twsrc%5Etfw">#alanwake</a> <a href="https://t.co/PkLsIVuelW">pic.twitter.com/PkLsIVuelW</a></p>&mdash; Remedy Entertainment (@remedygames) <a href="https://twitter.com/remedygames/status/1724094936453177515?ref_src=twsrc%5Etfw">November 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </a>
             </div>
         </div>
     </div>
@@ -154,7 +181,7 @@
     <script src="./assets/js/youtube.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/search.js"></script>
+    <script src="./assets/js/script.js"></script>
     
 </body>
-
 </html>
