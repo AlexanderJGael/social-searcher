@@ -4,12 +4,11 @@
 
 AS a creator
 WHEN someone visits my website
-THEN they can see my most recent social media posts
+THEN they can see my most recent social media posts and YouTube video.
 WHEN I use the search bar
-THEN the page displays YouTube channel content relevant to my query
+THEN the page displays YouTube channel and Spotify content relevant to my query.
 WHEN I click on the Nav Bar
-THEN the buttons direct me to the specified place in the application
-
+THEN the buttons direct me to the specified place in the application.
 
 ##Deployment
 
@@ -17,26 +16,24 @@ Here is a screenshot of the deployed application:
 
 ![](./assets/)
 
-
 Here is a link to the GitHub repo for this application:
 
 https://github.com/AlexanderJGael/social-searcher
-
 
 Here is a link to the deployed application:
 
 https://alexanderjgael.github.io/social-searcher/
 
-
 ## Installation
-N/A
 
+N/A
 
 ## Credits
 
 Collaborators: Alex Gael, Jennie Brockhoff, and Mark Tovar
 
 APIs used:
+
 - daisyUI (Built on Tailwind): https://daisyui.com
 - YouTube API
 
