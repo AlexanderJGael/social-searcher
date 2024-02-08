@@ -8,6 +8,6 @@ fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${C
   .then((data) => {
     console.log(data)
     let videoId = data.items[0].id.videoId;
-    document.getElementById('youtubeEmbed').innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    document.getElementById('youtubeEmbed').innerHTML = `<iframe width="1020" height="560" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
   })
   .catch((error) => console.error('Error:', error));
