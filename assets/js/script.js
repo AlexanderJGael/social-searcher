@@ -1,6 +1,6 @@
 //DOM Elements
 var emailInput = document.querySelector("#email");
-var submitButton = document.querySelector("#submit");
+var submitButton = document.querySelector("#submit-email");
 var formCardTitle = document.querySelector("card-title")
 
 
@@ -56,6 +56,6 @@ submitButton.addEventListener("click", function (event) {
 //Create a function that displays a confirm message when the email is submitted.
 function confirmMessage() {
     $("#email").addClass("hidden");
-    $("#submit").addClass("hidden");
+    $("#submit-email").addClass("hidden");
     document.querySelector("#signup-card-title").textContent = "Your email has been signed up!"
 }
