@@ -4,7 +4,7 @@ var submitButton = document.querySelector("#submit");
 var formCardTitle = document.querySelector("card-title")
 
 
-//function that turns the button red for a half second, then switches back to green.
+//function that turns the button red for a half second, then switches back to green
 function badSubmit() {
     switchRed();
     setTimeout(function () {
@@ -12,24 +12,24 @@ function badSubmit() {
     }, 1000);
 
     function switchRed() {
-        document.getElementById("#submit-email").style.backgroundColor = "red"
+        submitButton.style.backgroundColor = "red"
     };
 
     function switchGreen() {
-        document.getElementById("submit").style.backgroundColor = "green"
+        submitButton.style.backgroundColor = "green"
     }
 }
 
 //function that replaces the "buy now" with "success" when pressed with an email in the input
 function goodSubmit() {
-    document.getElementById("submit").textContent = "Success!"
+    submitButton.textContent = "Success!"
 
     setTimeout(function () {
-        document.getElementById("submit").textContent = "Submit"
+        submitButton.textContent = "Submit"
     }, 1000);
 }
 
-//when you click the "Submit" button, starts an event that stores your email and who you're subscribed to.
+//when you click the "Submit" button, starts an event that stores your email and who you're subscribed to
 submitButton.addEventListener("click", function (event) {
     event.preventDefault();
     const currentSubscribers = JSON.parse(localStorage.getItem("subscribers")) || []
@@ -37,7 +37,8 @@ submitButton.addEventListener("click", function (event) {
         email: emailInput.value,
         subscribeTo: document.getElementById("youtubeEmbed").dataset.channel
     }
-    //if you leave the input empty, it triggers a function that turns the button red for a second
+
+    //if you leave the input empty, it triggers a function that turns the button red for 1 second
     emailInput.value = ""
 
     if (newSubscriber.email.includes("@gmail.com") || newSubscriber.email.includes("@yahoo.com")) {
@@ -51,7 +52,7 @@ submitButton.addEventListener("click", function (event) {
     }
 });
 
-//Create a function that displays a confirm message when the email is submitted.
+//Create a function that displays a confirm message when the email is submitted
 function confirmMessage() {
     $("#email").addClass("hidden");
     $("#submit").addClass("hidden");

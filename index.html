@@ -17,7 +17,7 @@
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a href="#hero">About Us</a></li>
               <li><a href="#content">Recent Videos</a></li>
@@ -44,7 +44,7 @@
       <!--Search Bar Input Field and Search Button-->
       <div class="navbar-end">
           <form class="form flex items">
-            <input id="search" type="text" class="input text-neutral-content" placeholder="Search..."/>
+            <input id="search" type="text" class="text-white input input-ghost" placeholder="Search..."/>
               <a href="/" target="_self">
                 <button id="search-btn" class="btn btn-ghost btn-circle">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
@@ -117,51 +117,28 @@
 </hero>
 
 <body>
-  <div section="content" id="content" class="box p-8 flex flex-wrap items-center bg-neutral h-screen w-screen">
-      <!-- YouTube Uploads -->
-        <div class="h-1/2  bg-neutral card flex-col bg-neutral w-full m-8 outline">
-<body>
-    <!-- Hero section -->
-    <div id="hero" class="hero min-h-screen" style="background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
-        <!-- Replace Background Image -->
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
-        <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">Social Searcher</h1>
-            <!-- Update Header Language -->
-            <p class="mb-5">A simple web app for all of your social media needs.</p>
-            <!-- Update Hero Text -->
-            <!-- <button class="btn btn-primary">Get Started</button> -->
-            </div>
-         </div>
-    </div>
-    <!-- Divider -->
-    <div class="divider divider-secondary divider-start m-0 pr-2 pl-2"></div>
-
-    <!-- Section Container -->
-    <div section="content" id="content" class="flex h-96 mb-2 items-center justify-around">
-        <div class="h-96 bg-neutral card flex-col bg-base-100 w-1/2 shadow-xl ml-4">
+  <!-- YouTube Uploads -->
+    <div section="content" id="content" class="box p-8 flex flex-wrap items-center bg-black h-screen w-screen">
+        <div class="h-1/2 bg-neutral box flex-col bg-black w-full m-8 outline outline-red-600">
             <div class="h-full card-body items-center">
-                <h2 class="card-title ">Most Recent Upload</h2>
-                <iframe height="100%" width="100%" src="https://www.youtube.com/embed/uxs_HYw_mLk?si=wezg-QmIWQPhWlNK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                <h2 class="card-title text-red-600">Most Recent Upload</h2>
+                <a id="youtubeEmbed"></a>
             </div>
         </div>
 
-        <div class="divider"></div>
-
         <!-- Email Sign-Up -->
-        <div class="flex-grow max-w-1/3 h-96 outline p-8 flex-col card bg-neutral">
-            <div class="card-body items-center justify-center p-12">
-                <h2 id="signup-card-title" class="card-title">Sign Up for Email Updates</h2>
-                <input id="email" type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
-                <button id="submit" class="btn btn-primary">Submit Email</button>
+        <div class="flex-grow items-center justify-center box max-w-1/3 h-96 outline outline-red-600 m-8 bg-black">
+            <div class="card-body h-full flex-col items-center justify-center">
+                <h2 id="signup-card-title" class="card-title text-red-600">Sign Up for Email Updates</h2>
+                <input id="email" type="text" placeholder="Enter your email..." class="m-4 text-red-600 input input-bordered input-error input-bordered border-red-600 bg-black w-full max-w-xs" />
+                <button id="submit" class="btn bg-black text-red-600">Submit</button>
             </div>
           </div>
 
         <!-- Tweet Card -->
-        <div class="flex-grow max-w-2/3 h-96 card outline flex-col items-center bg-neutral m-8">
+        <div class="flex-grow max-w-2/3 h-96 box outline outline-red-600 flex-col items-center justify-center bg-black m-8">
           <div class="card-body flex-col items-center justify-center">
-              <h2 class="card-title">Recent Tweets</h2>
+              <h2 class="card-title text-red-600">Recent Tweets</h2>
               <a class="twitter-timeline flex" data-chrome="noscrollbar noheader noborders" data-width="600" data-height="300" data-theme="dark" data-tweet-limit="1" href="https://twitter.com/remedygames?ref_src=twsrc%5Etfw">Tweets by remedygames</a> 
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <div class="card h-1/2 w-full shadow-xl m-4">
@@ -180,8 +157,6 @@
     <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
     <script src="./assets/js/youtube.js"></script>
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/search.js"></script>
-    <script src="./assets/js/script.js"></script>
-    
+    <script src="./assets/js/search.js"></script>  
 </body>
 </html>
