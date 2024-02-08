@@ -10,7 +10,7 @@ THEN the page displays YouTube channel and Spotify content relevant to my query.
 WHEN I click on the Nav Bar
 THEN the buttons direct me to the specified place in the application.
 
-##Deployment
+## Deployment
 
 Here is a screenshot of the deployed application:
 
@@ -38,6 +38,7 @@ APIs used:
 - YouTube API
 
 Tutoring assistance from Chris Baird
+Content credit to Remedy Entertainment
 
 ## License
 
