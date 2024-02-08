@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,16 +22,29 @@
         </a>
       </div>
     </div>
+    
+    <div class="flex items-center justify-center mt-5">
+      <form class="form flex">
+        <input id="search" type="text" class="input outline text-neutral-content" placeholder="Search..."/>
+        <a href="results.html" target="_self">
+          <button id="search-btn" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z">
+            </svg>
+          </button>
+        </a> 
+      </form>
+    </div>
 
     <div class="divider"></div>
-
-    <div id="list" class="flex flex-col items-center justify-center">
-      <ul id="results">
-      </ul>
-    </div>
+    
+    <content class="flex-col items-center justify-center">
+      <div id="list" class="flex items-center justify-center w-screen m-5">
+        <ul id="resultContainer" class="flex-col items-center justify-center w-1/2"></ul>
+        <ul id="results" class="flex-col m-5 w-1/2"></ul>
+      </div>
+    </content>
   <script src="./assets/js/results.js"></script>
+  <script src="./assets/js/spotify.js"></script>
 </body>
 
 </html>
-    
-
