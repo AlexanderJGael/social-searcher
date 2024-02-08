@@ -14,11 +14,11 @@ function badSubmit() {
     }, 1000);
 
     function switchRed() {
-        document.getElementById("#submit-email").style.backgroundColor = "red"
+        document.getElementById("submit-email").style.backgroundColor = "red"
     };
 
     function switchGreen() {
-        document.getElementById("#submit-email").style.backgroundColor = "green"
+        document.getElementById("submit-email").style.backgroundColor = "green"
 
     }
 }
@@ -29,10 +29,10 @@ function badSubmit() {
 //function that replaces the "buy now" with "success" when pressed with an email in the input
 function goodSubmit() {
 
-    document.getElementById("#submit-email").textContent = "success!"
+    document.getElementById("submit-email").textContent = "success!"
 
     setTimeout(function () {
-        document.getElementById("#submit-email").textContent = "Buy Now"
+        document.getElementById("submit-email").textContent = "Buy Now"
     }, 1000);
 
 }
