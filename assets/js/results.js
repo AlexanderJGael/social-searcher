@@ -24,12 +24,13 @@ console.log(SEARCH);
 
         // Create a container div for each video
         var videoContainer = document.createElement("div");
-        videoContainer.classList.add("flex", "flex-col", "justify-center", "items-center", "m-4");
+        videoContainer.classList.add("flex", "flex-col", "items-center", "justify-center", "items-center", "m-16");
         videoContainer.style.height = "400px"; // Set the height to 300px
         videoContainer.style.width = "400px";
 
         // Create an image element for the video thumbnail
-        var thumbnailImage = document.createElement("img").addClass("m-4");
+        var thumbnailImage = document.createElement("img");
+        thumbnailImage.classList.add("m-4");
         thumbnailImage.src = videoThumbnail;
         thumbnailImage.style.width = "100%";
 
