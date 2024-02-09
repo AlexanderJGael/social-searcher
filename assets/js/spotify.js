@@ -28,7 +28,7 @@ fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks?q=${searchQuery
         console.log("Artist:", trackArtist);
         console.log("Image:", trackImage);
 
-        var musicContainer = $("<div>").addClass("music-container flex flex-col justify-center items-center m-16");
+        var musicContainer = $("<div>").addClass("music-container flex flex-col justify-center items-center mr-2");
         musicContainer.css({height: "400px", width: "400px"});
         var nameElement = $("<h3>").text(trackName);
         var imageElement = $("<img>").attr("src", trackImage).addClass("m-4");
