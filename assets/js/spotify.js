@@ -1,6 +1,6 @@
 var searchQuery = $("#search").val();
 var playlistId = "6lPvKGavrxnoLOlr72v1ET?si=7437b047cd60498f";
-var accessToken = "BQA0_FTs2Xxe8Ug7X7cyQx0YExdHuTZnwVjPmJWWYkYYAipUsbO-aQNYL0CH_wG1uFZ_hOgqMUTIPI1WslQJyNHiOQDqkvo_BJYYlBfXxKod_SSnUDk";
+var accessToken = 'BQDXS95xfRNJcDQWSB5RGYJoNvzXRSwpMmsORE4R8q_Pc746YHKUNNvwnbk1BUzxVaqoCcKED6TrrZgvn9GLWrXCkOSVuqEUxIHT31ce9MGezXPE31Y';
 
 fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks?q=${searchQuery}&limit=10`, {
   headers: {
@@ -19,11 +19,16 @@ fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks?q=${searchQuery
         var trackArtist = track.track.artists[0].name;
         var trackImage = track.track.album.images[0].url;
 
+        // Create an anchor element for the clickable link
+        var spotifyLink = $("<a>");
+        spotifyLink.attr('href', track.track.external_urls.spotify);
+        spotifyLink.attr('target', '_blank'); // Open the link in a new tab
+
         console.log("Track:", trackName);
         console.log("Artist:", trackArtist);
         console.log("Image:", trackImage);
 
-        var musicContainer = $("<div>").addClass("music-container flex flex-col justify-center items-center");
+        var musicContainer = $("<div>").addClass("music-container flex flex-col justify-center items-center mr-2");
         musicContainer.css({height: "400px", width: "400px"});
         var nameElement = $("<h3>").text(trackName);
         var imageElement = $("<img>").attr("src", trackImage).addClass("m-4");
@@ -33,7 +38,8 @@ fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks?q=${searchQuery
         musicContainer.append(artistElement);
         musicContainer.append(nameElement);
         musicContainer.append(imageElement);
-        $("#resultContainer").append(musicContainer);
+        spotifyLink.append(musicContainer);
+        $("#resultContainer").append(spotifyLink);
       });
     } else {
       console.log("Tracks not found");

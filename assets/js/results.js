@@ -1,6 +1,6 @@
-/* var API_KEY = "AIzaSyCZmbOSPR6rIQ3IQDcQfzqGsPZLERTiL_c"; */
-//var API_KEY = "AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE";
-var API_KEY = "AIzaSyDc8pWz32IVDozNbfYqKd3bTcifbladBY4";
+//var API_KEY = "AIzaSyCZmbOSPR6rIQ3IQDcQfzqGsPZLERTiL_c";
+var API_KEY = "AIzaSyCS9ZrJOwXU9eQOeUGoLmH5TcdW-5xT8RE";
+//var API_KEY = "AIzaSyDc8pWz32IVDozNbfYqKd3bTcifbladBY4";
 var CHANNEL_ID = localStorage.getItem("channelId");
 var SEARCH = localStorage.getItem("search");
 console.log(CHANNEL_ID);
@@ -15,7 +15,8 @@ console.log(SEARCH);
       data.items.forEach((item) => {
         var videoId = item.id.videoId;
         var videoTitle = item.snippet.title;
-        var videoThumbnail = item.snippet.thumbnails.default.url;
+//        var videoThumbnail = item.snippet.thumbnails.high.url;
+        var videoId = item.id.videoId;
 
         // Create an anchor element for the clickable link
         var link = document.createElement("a");
@@ -24,14 +25,19 @@ console.log(SEARCH);
 
         // Create a container div for each video
         var videoContainer = document.createElement("div");
-        videoContainer.classList.add("flex", "flex-col", "justify-center", "items-center", "m-4");
+        videoContainer.classList.add("flex", "flex-col", "items-center", "justify-center", "items-center", "ml-2");
         videoContainer.style.height = "400px"; // Set the height to 300px
         videoContainer.style.width = "400px";
 
         // Create an image element for the video thumbnail
-        var thumbnailImage = document.createElement("img").addClass("m-4");
-        thumbnailImage.src = videoThumbnail;
-        thumbnailImage.style.width = "100%";
+        //var thumbnailImage = document.createElement("img");
+        // thumbnailImage.classList.add("m-4");
+        // thumbnailImage.src = videoThumbnail;
+        // thumbnailImage.style.width = "100%";
+
+        var thumbnailVideo = document.createElement('a')
+        thumbnailVideo.innerHTML = `<iframe height="300" width="533.4" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        thumbnailVideo.classList = 'm-4'
 
         // Create a heading element for the video title
         var titleHeading = document.createElement("h3");
@@ -39,7 +45,8 @@ console.log(SEARCH);
 
         // Append the thumbnail and title elements to the video container
         videoContainer.appendChild(titleHeading);
-        videoContainer.appendChild(thumbnailImage);
+        // videoContainer.appendChild(thumbnailImage);
+        videoContainer.appendChild(thumbnailVideo);
 
         link.appendChild(videoContainer);
         document.getElementById("results").appendChild(link);
